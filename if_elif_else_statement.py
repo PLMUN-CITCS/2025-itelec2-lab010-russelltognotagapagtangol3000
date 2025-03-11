@@ -32,14 +32,13 @@ def determine_letter_grade(grade: int) -> str:
     """
     if grade >= 90:
         return "A"
-    elif grade >= 80:
+    if grade >= 80:
         return "B"
-    elif grade >= 70:
+    if grade >= 70:
         return "C"
-    elif grade >= 60:
+    if grade >= 60:
         return "D"
-    else:
-        return "F"
+    return "F"
 
 def main() -> None:
     """Main function that runs the grade classification program."""
